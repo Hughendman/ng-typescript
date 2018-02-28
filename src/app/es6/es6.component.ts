@@ -45,9 +45,18 @@ export class Es6Component implements OnInit {
   }
   es5() {//es8新特性 异步函数(Async functions)
     async function asyncFunc(params) {
-      const result1 = await this.login();
-      const result2 = await this.getInfo();
+      console.log(params);
+      const result1 = await (function () {
+        console.log("function1");
+      })();
+      const result2 = await (function () {
+        console.log("function2");
+      })();
     }
+    asyncFunc("sdf");
+  }
+  es6(){
+
   }
   ngOnInit() {
     this.es1();
