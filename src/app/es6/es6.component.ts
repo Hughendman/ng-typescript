@@ -56,7 +56,6 @@ export class Es6Component implements OnInit {
     asyncFunc("sdf");
   }
   es6(){
-
   }
   ngOnInit() {
     this.es1();

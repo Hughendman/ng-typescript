@@ -8,18 +8,21 @@ import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 import { AppComponent } from './app.component';
 import { Typescript1Component } from './typescript1/typescript1.component';
 import { Es6Component } from './es6/es6.component';
+import { JsComponent } from './js/js.component';
 
 const ROUTES: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'ts' },
   { path: 'ts', component: Typescript1Component},
-  { path: 'es6', component: Es6Component}
+  { path: 'es6', component: Es6Component},
+  { path: 'js', component: JsComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     Typescript1Component,
-    Es6Component
+    Es6Component,
+    JsComponent
   ],
   imports: [
     BrowserModule,
