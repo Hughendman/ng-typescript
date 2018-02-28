@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./es6.component.css']
 })
 export class Es6Component implements OnInit {
-  time = '';
+  time;includes;num;
   constructor() {
   }
   es1() {// promise 的使用
@@ -14,12 +14,10 @@ export class Es6Component implements OnInit {
       setTimeout(resolve, 1000);
     }).then(()=> {
       setTimeout( () => {
-        console.log('Yay!');
         this.time = 'Yay!';
       }, 1000);
     }).then(() => {
       setTimeout( () => {
-        console.log('Wheeyee!');
         this.time = 'Wheeyee!';
       },2000);
     });
@@ -36,14 +34,24 @@ export class Es6Component implements OnInit {
     }
     let person = new Person(1,2);
     this.time = person.name();
-    console.log(person.name());
   }
-  es3() {//es7的异步函数
+  es3() {//includes的使用
+    this.includes ="includes显示的是"+ [1,2,3,4,5,6].includes(1);
+  }
+  es4() {//运算
+    let a = 3 ** 2;
+    this.num ="指数的计算"+ a;
+
+  }
+  es5() {//es8新特性 异步函数(Async functions)
     
 
   }
   ngOnInit() {
     this.es1();
+    this.es2();
+    this.es3();
+    this.es4();
   }
 
 }
