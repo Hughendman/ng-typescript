@@ -1,0 +1,33 @@
+.out {
+  margin-top: 100px;
+  width: 480px;
+  height: 0px;
+  border: 2px solid #ccc;
+}
+.in {
+  width: 200px;
+  margin-left: 19px;
+  border: 2px solid #009789;
+  margin-top: -2px;
+  position: relative;
+}
+.in span {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  display: block;
+  background-color: #009789;
+  line-height: 24px;
+ }
+#timeStart {
+  top: -30px;
+  left: -10px;
+}
+
+#timeEnd {
+  right: -10px;
+  top: -30px;
+}

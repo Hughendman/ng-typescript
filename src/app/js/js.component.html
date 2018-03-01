@@ -1,4 +1,10 @@
 <div>
   <div>js高级应用回顾</div>
   <div>{{risk}}</div>
+  <div *ngFor="let any of any">{{any}}</div>
+  <div *ngIf="flag">显示的是ngIf的使用</div>
+  <button (click)="js6()">测试的是flag事件--点击使“显示的是ngIf的使用”消失或者显示</button>
+  <div>下面的是时间显示条</div>
+  <input type="text" [(ngModel)]="timeA"><input type="text" [(ngModel)]="timeB"><button (click) = "js8()">提交</button>
+  <div class="out"><div class="in" id="timeArea"><span id="timeStart">{{timeA}}</span><span id="timeEnd">{{timeB}}</span></div></div>
 </div>
